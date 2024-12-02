@@ -28,13 +28,16 @@ This repository contains my complete Neovim setup, optimized for programming, sy
   git clone --depth 1 https://github.com/wbthomason/packer.nvim \
     ~/.local/share/nvim/site/pack/packer/start/packer.nvim-cmp
 ```
-	•	Node.js: Required for certain plugins.
-	•	Python 3 with pynvim: Install it with:
+
+•	Node.js: Required for certain plugins.
+
+•	Python 3 with pynvim: Install it with:
 
 ```bash
 pip install pynvim
 ```
-	•	Git: Required for managing plugins.
+
+•	Git: Required for managing plugins.
 
 Installation
 
