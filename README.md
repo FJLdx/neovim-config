@@ -104,9 +104,9 @@ Easily add or modify surrounding delimiters:
 
 ---
 
-### **Cómo añadir esto al repositorio**
+##
+Steps to Correct the README.md
 
-1. **Edita el `README.md`**:
-   Abre el archivo en Neovim:
-   ```bash
+	1.	Edit the file:
+Open the README.md file in Neovim:
    nvim /home/ldx/neovim-config/README.md
