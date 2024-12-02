@@ -1,39 +1,36 @@
+Neovim Configuration
+
 This repository contains my custom Neovim configuration, designed to enhance efficiency and provide a clear visual experience.
 
-## Key Features
-- **Autocomplete**: Integrated with `nvim-cmp`.
-- **Advanced Syntax Highlighting**: Powered by `Treesitter`.
-- **Auto-Pairing**: Automatically close brackets, parentheses, and quotes with `nvim-autopairs`.
-- **Enhanced Visuals**: Status bar, file explorer, indentation guides, and more.
+Key Features
 
-## Included Plugins
-- `nvim-cmp`: Autocompletion.
-- `nvim-treesitter`: Advanced syntax highlighting.
-- `nvim-autopairs`: Auto-close delimiters.
-- `lualine.nvim`: Status bar.
-- `nvim-tree.lua`: File explorer.
-- `telescope.nvim`: Advanced file and text searching.
-- `indent-blankline.nvim`: Visual guides for indentation.
-- `Comment.nvim`: Quick commenting and uncommenting.
-- `toggleterm.nvim`: Integrated terminal.
-- `nvim-surround`: Easy manipulation of surrounding delimiters.
+	•	Autocomplete: Integrated with nvim-cmp.
+	•	Advanced Syntax Highlighting: Powered by Treesitter.
+	•	Auto-Pairing: Automatically close brackets, parentheses, and quotes with nvim-autopairs.
+	•	Enhanced Visuals: Status bar, file explorer, indentation guides, and more.
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/FJLdx/neovim-config.git ~/.config/nvim
+Included Plugins
 
+	•	nvim-cmp: Autocompletion.
+	•	nvim-treesitter: Advanced syntax highlighting.
+	•	nvim-autopairs: Auto-close delimiters.
+	•	lualine.nvim: Status bar.
+	•	nvim-tree.lua: File explorer.
+	•	telescope.nvim: Advanced file and text searching.
+	•	indent-blankline.nvim: Visual guides for indentation.
+	•	Comment.nvim: Quick commenting and uncommenting.
+	•	toggleterm.nvim: Integrated terminal.
+	•	nvim-surround: Easy manipulation of surrounding delimiters.
+
+Installation
+
+	1.	Clone this repository:
+git clone https://github.com/FJLdx/neovim-config.git ~/.config/nvim
 	2.	Make sure packer.nvim is installed:
-
-git clone --depth 1 https://github.com/wbthomason/packer.nvim \
+git clone –depth 1 https://github.com/wbthomason/packer.nvim 
 ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-
 	3.	Open Neovim and run:
-
 :PackerSync
-
-
 
 Enjoy your custom Neovim setup!
 
@@ -81,13 +78,13 @@ Visual indentation guides:
 Nvim-autopairs
 
 Automatically closes brackets, parentheses, and quotes:
-	•	Type an opening delimiter (e.g., (, {, "), and it automatically adds the closing one.
+	•	Type an opening delimiter (e.g., (, {, “), and it automatically adds the closing one.
 	•	Works seamlessly with autocompletion.
 
 Toggleterm.nvim
 
 Integrated terminal:
-	•	Ctrl+\: Open or close the terminal in a floating window.
+	•	Ctrl+: Open or close the terminal in a floating window.
 	•	Use terminal commands as usual.
 
 Comment.nvim
@@ -100,11 +97,11 @@ Quickly comment and uncomment lines:
 Nvim-surround
 
 Easily add or modify surrounding delimiters:
-	•	ys<motion><char>: Add surrounding characters.
+	•	ys: Add surrounding characters.
 	•	Example: ysiw( converts word to (word).
-	•	cs<old><new>: Change surrounding characters.
-	•	Example: cs"' changes "word" to 'word'.
-	•	ds<char>: Delete surrounding characters.
+	•	cs: Change surrounding characters.
+	•	Example: cs”’ changes “word” to ‘word’.
+	•	ds: Delete surrounding characters.
 	•	Example: ds( changes (word) to word.
 
 Treesitter Features
@@ -116,6 +113,3 @@ Treesitter Features
 Contributions
 
 Feel free to open an issue or pull request with suggestions or improvements.
-
----
-
