@@ -40,29 +40,31 @@ Requirements
 •	Neovim: Version 0.8 or higher.
 •	Plugin Manager: Install packer.nvim with:
 
-`git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
-
+```git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 •	Node.js: Required for some plugins.
 •	Python3 with pynvim: Install it with:
 
-`pip install pynvim`
 
+```pip install pynvim
+```
 •	Git: Required for managing plugins.
 
 Installation
 
 1.	Clone this repository into your Neovim configuration directory:
 
-`<LeftMouse>git clone https://github.com/FJLdx/neovim-config.git ~/.config/nvim`
+```<LeftMouse>git clone https://github.com/FJLdx/neovim-config.git ~/.config/nvim 
+```
 
 2.	Open Neovim and install plugins:
 
-`:PackerSync`
-
+```:PackerSync
+```
 3.	Update Treesitter for syntax highlighting:
 
-`:TSUpdate`
-
+```:TSUpdate
+```
 4.	Restart Neovim to apply all changes.
 
 Keybindings and Shortcuts
