@@ -35,3 +35,78 @@ Enjoy your custom Neovim setup!
 Contributions
 
 Feel free to open an issue or pull request with suggestions or improvements.
+
+## Key Features and Shortcuts
+
+### General
+- **Open Neovim**: Run `nvim` in the terminal.
+- **Save and Quit**:
+  - `:w`: Save the current file.
+  - `:q`: Quit Neovim.
+  - `:wq`: Save and quit.
+  - `:q!`: Quit without saving.
+
+### Plugin Shortcuts
+
+#### **Telescope.nvim**
+Advanced searching and file navigation:
+- `:Telescope find_files`: Search for files in the current project.
+- `:Telescope live_grep`: Search for text within files.
+- `:Telescope buffers`: List all open buffers.
+- `:Telescope help_tags`: Search Neovim's help documentation.
+
+#### **Nvim-tree.lua**
+File explorer:
+- `:NvimTreeToggle`: Open or close the file explorer.
+- `a`: Create a new file or directory.
+- `d`: Delete a file or directory.
+- `r`: Rename a file or directory.
+
+#### **Lualine.nvim**
+Status bar:
+- Displays file name, file type, diagnostics, and cursor position.
+- No additional shortcuts needed; it updates automatically.
+
+#### **Indent-blankline.nvim**
+Visual indentation guides:
+- Highlights the indentation levels of your code.
+- Shows the current block scope automatically (no shortcuts required).
+
+#### **Nvim-autopairs**
+Automatically closes brackets, parentheses, and quotes:
+- Type an opening delimiter (e.g., `(`, `{`, `"`), and it automatically adds the closing one.
+- Works seamlessly with autocompletion.
+
+#### **Toggleterm.nvim**
+Integrated terminal:
+- `Ctrl+\`: Open or close the terminal in a floating window.
+- Use terminal commands as usual.
+
+#### **Comment.nvim**
+Quickly comment and uncomment lines:
+- `gc`: Comment out the current line.
+- `gb`: Comment out a block of code.
+- Works in visual mode for selected text.
+
+#### **Nvim-surround**
+Easily add or modify surrounding delimiters:
+- `ys<motion><char>`: Add surrounding characters.
+  - Example: `ysiw(` converts `word` to `(word)`.
+- `cs<old><new>`: Change surrounding characters.
+  - Example: `cs"'` changes `"word"` to `'word'`.
+- `ds<char>`: Delete surrounding characters.
+  - Example: `ds(` changes `(word)` to `word`.
+
+### Treesitter Features
+- Syntax-aware highlighting for supported languages.
+- Automatically installed for languages like Bash, Python, Lua, and JavaScript.
+- No shortcuts needed; it works in the background.
+
+---
+
+### **Cómo añadir esto al repositorio**
+
+1. **Edita el `README.md`**:
+   Abre el archivo en Neovim:
+   ```bash
+   nvim /home/ldx/neovim-config/README.md
