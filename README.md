@@ -1,115 +1,104 @@
 Neovim Configuration
 
-This repository contains my custom Neovim configuration, designed to enhance efficiency and provide a clear visual experience.
+This repository contains my complete Neovim setup, optimized for programming, system administration, and cybersecurity tasks. It includes plugins and settings to enhance productivity, navigation, and code clarity.
 
-Key Features
+Features
 
-	•	Autocomplete: Integrated with nvim-cmp.
-	•	Advanced Syntax Highlighting: Powered by Treesitter.
-	•	Auto-Pairing: Automatically close brackets, parentheses, and quotes with nvim-autopairs.
-	•	Enhanced Visuals: Status bar, file explorer, indentation guides, and more.
+1.	Plugin Management:
+	
+•	Packer is used to manage all plugins.
+	
+2.	Autocompletion:
 
-Included Plugins
+•	nvim-cmp: The main completion engine.
+•	cmp-nvim-lsp: Completion sources for Language Server Protocol.
+•	cmp-buffer: Completion from buffer content.
+•	cmp-path: Path-based completion.
+•	vim-vsnip and cmp-vsnip: Snippet support.
 
-	•	nvim-cmp: Autocompletion.
-	•	nvim-treesitter: Advanced syntax highlighting.
-	•	nvim-autopairs: Auto-close delimiters.
-	•	lualine.nvim: Status bar.
-	•	nvim-tree.lua: File explorer.
-	•	telescope.nvim: Advanced file and text searching.
-	•	indent-blankline.nvim: Visual guides for indentation.
-	•	Comment.nvim: Quick commenting and uncommenting.
-	•	toggleterm.nvim: Integrated terminal.
-	•	nvim-surround: Easy manipulation of surrounding delimiters.
+3.	Syntax Highlighting:
+
+•	nvim-treesitter: Advanced syntax highlighting and code structure parsing.
+
+4.	Indentation Visualization:
+
+•	indent-blankline.nvim: Displays indentation blocks for better code readability.
+
+5.	Theme:
+
+•	Dracula: A visually appealing dark theme.
+
+6.	Additional Tools:
+
+•	Integrated file explorer.
+•	Embedded terminal.
+•	Commenting shortcuts.
+•	Diagnostics and error handling.
+
+Requirements
+
+•	Neovim: Version 0.8 or higher.
+•	Plugin Manager: Install packer.nvim with:
+
+`git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+
+•	Node.js: Required for some plugins.
+•	Python3 with pynvim: Install it with:
+
+`pip install pynvim`
+
+•	Git: Required for managing plugins.
 
 Installation
 
-	1.	Clone this repository:
-git clone https://github.com/FJLdx/neovim-config.git ~/.config/nvim
-	2.	Make sure packer.nvim is installed:
-git clone –depth 1 https://github.com/wbthomason/packer.nvim 
-~/.local/share/nvim/site/pack/packer/start/packer.nvim
-	3.	Open Neovim and run:
-:PackerSync
+1.	Clone this repository into your Neovim configuration directory:
 
-Enjoy your custom Neovim setup!
+`<LeftMouse>git clone https://github.com/FJLdx/neovim-config.git ~/.config/nvim`
 
-Key Features and Shortcuts
+2.	Open Neovim and install plugins:
+
+`:PackerSync`
+
+3.	Update Treesitter for syntax highlighting:
+
+`:TSUpdate`
+
+4.	Restart Neovim to apply all changes.
+
+Keybindings and Shortcuts
 
 General
 
-	•	Open Neovim: Run nvim in the terminal.
-	•	Save and Quit:
-	•	:w: Save the current file.
-	•	:q: Quit Neovim.
-	•	:wq: Save and quit.
-	•	:q!: Quit without saving.
+•	<leader>e: Toggle file explorer.
+•	<leader>f: Search for files.
+•	<leader>c: Comment or uncomment selected lines.
+•	:w: Save the current file.
+•	:q: Quit Neovim.
+•	:x: Save and quit Neovim.
 
-Plugin Shortcuts
+Navigation
 
-Telescope.nvim
+•	gg: Go to the beginning of the file.
+•	G: Go to the end of the file.
+•	%: Jump to matching brackets, parentheses, or braces.
 
-Advanced searching and file navigation:
-	•	:Telescope find_files: Search for files in the current project.
-	•	:Telescope live_grep: Search for text within files.
-	•	:Telescope buffers: List all open buffers.
-	•	:Telescope help_tags: Search Neovim’s help documentation.
+Diagnostics
 
-Nvim-tree.lua
+•	<leader>d: Show diagnostics for the current line.
+•	[d: Jump to the previous diagnostic.
+•	]d: Jump to the next diagnostic.
 
-File explorer:
-	•	:NvimTreeToggle: Open or close the file explorer.
-	•	a: Create a new file or directory.
-	•	d: Delete a file or directory.
-	•	r: Rename a file or directory.
+Terminal Integration
 
-Lualine.nvim
+•	<leader>t: Open the embedded terminal.
 
-Status bar:
-	•	Displays file name, file type, diagnostics, and cursor position.
-	•	No additional shortcuts needed; it updates automatically.
+Treesitter
 
-Indent-blankline.nvim
+•	[m: Jump to the start of the previous function or method.
+•	]m: Jump to the start of the next function or method.
 
-Visual indentation guides:
-	•	Highlights the indentation levels of your code.
-	•	Shows the current block scope automatically (no shortcuts required).
+Autocompletion
 
-Nvim-autopairs
-
-Automatically closes brackets, parentheses, and quotes:
-	•	Type an opening delimiter (e.g., (, {, “), and it automatically adds the closing one.
-	•	Works seamlessly with autocompletion.
-
-Toggleterm.nvim
-
-Integrated terminal:
-	•	Ctrl+: Open or close the terminal in a floating window.
-	•	Use terminal commands as usual.
-
-Comment.nvim
-
-Quickly comment and uncomment lines:
-	•	gc: Comment out the current line.
-	•	gb: Comment out a block of code.
-	•	Works in visual mode for selected text.
-
-Nvim-surround
-
-Easily add or modify surrounding delimiters:
-	•	ys: Add surrounding characters.
-	•	Example: ysiw( converts word to (word).
-	•	cs: Change surrounding characters.
-	•	Example: cs”’ changes “word” to ‘word’.
-	•	ds: Delete surrounding characters.
-	•	Example: ds( changes (word) to word.
-
-Treesitter Features
-
-	•	Syntax-aware highlighting for supported languages.
-	•	Automatically installed for languages like Bash, Python, Lua, and JavaScript.
-	•	No shortcuts needed; it works in the background.
-
-Contributions
-
-Feel free to open an issue or pull request with suggestions or improvements.
+•	Tab: Navigate forward through completion suggestions.
+•	Shift-Tab: Navigate backward through completion suggestions.
+•	Enter: Confirm the current completion suggestion.
