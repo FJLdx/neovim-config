@@ -2,6 +2,19 @@
 
 This repository contains my complete Neovim setup, optimized for programming, system administration, and cybersecurity tasks. It includes plugins and settings to enhance productivity, navigation, and code clarity.
 
+## Recent Changes
+
+- **Tabulation Settings**:
+  - Updated to support 2 spaces per tab.
+  - Parameters adjusted:
+    - `tabstop`: Number of spaces a tab represents.
+    - `shiftwidth`: Number of spaces used for auto-indentation.
+    - `softtabstop`: Number of spaces inserted or deleted with Tab or Backspace.
+    - `expandtab`: Converts tabs into spaces for consistent formatting.
+
+- **Plugin Directory**:
+  - Updated the `plugin/` folder with the latest configurations and plugins.
+
 ## Features
 
 - **Plugin Management**: Utilizes [Packer](https://github.com/wbthomason/packer.nvim) to manage all plugins.

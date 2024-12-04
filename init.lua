@@ -172,6 +172,12 @@ cmp.setup({
   }
 })
 
+-- Configuración de tabulaciones
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+vim.opt.expandtab = true
+
 -- Integración de nvim-autopairs con nvim-cmp
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
